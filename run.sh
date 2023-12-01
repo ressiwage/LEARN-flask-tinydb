@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t flaskttesti .
-docker run --name flaskttest --expose=4000 -p 4000:5000 -d flaskttesti:latest
+docker build --no-cache -t flasktesti .
+docker run --name flasktest --expose=4000 -p 4000:5000 -d flasktesti:latest

@@ -47,3 +47,7 @@ def populate():
     data['name'] = random_word(3,8)
     db.insert(data)
     return {'code':200}
+
+@bp.route('/', methods=['GET'])
+def hw():
+    return """<h1>hello world</h1>"""
